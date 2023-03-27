@@ -21,8 +21,6 @@ const initalFormData = {
     },
     form2Data: {
         totalEmployee: '',
-        externalApply: false,
-        quickApply: false,
     }
 }
 const JobPosterModal = ({ open, onClose, onSuccessCb }: JobPosterModalProps) => {

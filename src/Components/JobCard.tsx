@@ -13,7 +13,7 @@ type JobCardPropType = {
     experience?: MinMax;
     salary?: MinMax;
     totalEmployees?: string;
-    applyType?: 'external' | 'quick'
+    applyType?: string
 }
 
 const getExperience = (experience: MinMax) => {
@@ -51,7 +51,7 @@ const JobCard = ({
                 </div>
                 <div className='flex gap-6'>
                     {applyType === 'external' ?
-                        <Button onClick={() => console.log('Save Clicked')} variant='primary'>External apply</Button> :
+                        <Button onClick={() => console.log('Save Clicked')} variant='outlined'>External apply</Button> :
                         <Button onClick={() => console.log('Save Clicked')} variant='primary'>Apply Now</Button>
                     }
                 </div>

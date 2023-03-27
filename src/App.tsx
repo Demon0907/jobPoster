@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Button from './Components/Elements/Buttons';
-import JobCard, { MinMax } from './Components/JobCard';
+import JobCard from './Components/JobCard';
 import JobPosterModal from './Components/JobPoster';
 import { getProduct } from './actions/getJobPosts';
 export interface JobPostType {
@@ -14,8 +14,7 @@ export interface JobPostType {
   salaryMin?: string
   salaryMax?: string
   totalEmployee?: string
-  externalApply: boolean
-  quickApply: boolean
+  applyType?: string
   id?: string
 }
 
@@ -50,7 +49,7 @@ function App() {
                 min: job.experienceMin,
                 max: job.experienceMax
               }}
-              applyType={job.externalApply ? "external" : job.quickApply ? 'quick' : 'quick'}
+              applyType={job.applyType}
               totalEmployees={job.totalEmployee}
             />)
         })

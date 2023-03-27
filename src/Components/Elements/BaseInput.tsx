@@ -23,11 +23,11 @@ export const Input: React.FC<InputProps> = (
         }
     ) => {
         const styles = {
-            base: 'flex-1 h-[3] rounded-md border border-solid w-full py-2 px-3 bg-white text-fontPrimary text-sm focus:outline-none focus:ring-1 focus:border-transparent transition duration-150 ease-in-out',
+            base: 'flex-1 h-[36px] rounded-md border border-solid w-full py-2 px-3 bg-white text-fontPrimary text-sm focus:outline-none focus:ring-1 focus:border-transparent transition duration-150 ease-in-out',
             state: {
-                normal: 'placeholder-fontPlaceHolder border-borderGrey focus:ring-primary',
-                error: 'placeholder-fontError border-red-600 focus:ring-red-600',
-                disabled: 'cursor-not-allowed bg-gray-100 shadow-inner text-gray-400'
+                normal: 'h-[36px] placeholder-fontPlaceHolder border-borderGrey focus:ring-primary',
+                error: 'h-[36px] placeholder-fontError border-red-600 focus:ring-red-600',
+                disabled: 'h-[36px] cursor-not-allowed bg-gray-100 shadow-inner text-gray-400'
             },
         }
 
