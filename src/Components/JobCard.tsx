@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Elements/Buttons'
-
+import logo from '../assets/image/logo.png';
 export type MinMax = {
     min?: string, max?: string
 };
@@ -35,7 +35,7 @@ const JobCard = ({
     const locationRemote = `${location} ${remoteType}`
     return (
         <div className='py-6 px-8 flex gap-2 bg-white border border-solid border-borderGrey rounded-md w-[830px]'>
-            <div className='h-12 w-12 rounded-sm'><img src='../../public/logo.png' alt='company-logo' /></div>
+            <div className='h-12 w-12 rounded-sm overflow-hidden'><img src={logo} alt='company-logo' /></div>
             <div className='flex flex-col gap-6'>
                 <div className='flex flex-col'>
                     <text className='text-2xl'>{jobTitle}</text>
